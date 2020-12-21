@@ -27,7 +27,7 @@ app.get('/catalog/:serial_numbers', (req, res) => {
     `);
     } else {
         res.status(404);
-        res.send(`<p>Error: Product with S/N ${sn} was not found!</p>`);
+        res.send(`<p>Error 404: Product with S/N ${sn} was not found!</p>`);
     }
 });
 
