@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <h1>Catalog</h1>
+    <ul>
+         //вместо да ги хардкордваме, казваме
+        {{#each products}} //използваме хелпер, който ще ги извърти в цикъл
+        <li><a href="/catalog/{{this}}">Product {{this}}</a></li>
+        {{/each}}
+        // <li><a href="/catalog/123">Product 123</a></li>
+        // <li><a href="/catalog/456">Product 456</a></li>
+        // <li><a href="/catalog/789">Product 789</a></li>
+
+
+    </ul>
+</body>
+
+</html>
